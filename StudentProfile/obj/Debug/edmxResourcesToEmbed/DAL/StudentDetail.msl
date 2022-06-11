@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StudentProfileModelStoreContainer" CdmEntityContainer="StudentProfileEntities">
+    <EntitySetMapping Name="tblCityMasters">
+      <EntityTypeMapping TypeName="StudentProfileModel.tblCityMaster">
+        <MappingFragment StoreEntitySet="tblCityMaster">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="stateid" ColumnName="stateid" />
+          <ScalarProperty Name="city" ColumnName="city" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStateMasters">
+      <EntityTypeMapping TypeName="StudentProfileModel.tblStateMaster">
+        <MappingFragment StoreEntitySet="tblStateMaster">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="state" ColumnName="state" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tblStudentDetails">
+      <EntityTypeMapping TypeName="StudentProfileModel.tblStudentDetail">
+        <MappingFragment StoreEntitySet="tblStudentDetail">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phnno" ColumnName="phnno" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="stateid" ColumnName="stateid" />
+          <ScalarProperty Name="cityid" ColumnName="cityid" />
+          <ScalarProperty Name="agree" ColumnName="agree" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
